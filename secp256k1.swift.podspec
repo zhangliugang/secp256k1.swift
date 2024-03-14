@@ -33,5 +33,5 @@ Bitcoin, Ethereum and many other Cryptocurrency Signature generation and verific
   s.source_files = 'Sources/secp256k1/{src,include,contrib}/*.{h,c}', 'Sources/secp256k1/src/modules/{recovery,ecdh,extrakeys,schnorrsig}/*.{h,c}'
   s.public_header_files = 'Sources/secp256k1/include/*.h'
   #s.private_header_files = 'Sources/secp256k1/*.h', 'Sources/secp256k1/{contrib,src}/*.h', 'Sources/secp256k1/src/modules/{recovery, ecdh, extrakeys, schnorrsig}/*.h'
-  s.exclude_files = 'Sources/secp256k1/src/*test*.{c,h}', 'Sources/secp256k1/src/gen_context.c', 'Sources/secp256k1/src/*bench*.{c,h}', 'Sources/secp256k1/src/precompute_ecmult*.{c,h}', 'Sources/secp256k1/src/modules/{recovery,ecdh,extrakeys,schnorrsig}/*test*.{c,h}', 'Sources/secp256k1/src/modules/{recovery,ecdh,extrakeys,schnorrsig}/*bench*.{c,h}'
+  s.exclude_files = 'Sources/secp256k1/src/test*.{c,h}', 'Sources/secp256k1/src/valgrind_ctime_test.c',  'Sources/secp256k1/src/gen_context.c', 'Sources/secp256k1/src/*bench*.{c,h}', 'Sources/secp256k1/src/precompute_ecmult*.{c,h}', 'Sources/secp256k1/src/modules/{recovery,ecdh,extrakeys,schnorrsig}/*test*.{c,h}', 'Sources/secp256k1/src/modules/{recovery,ecdh,extrakeys,schnorrsig}/*bench*.{c,h}'
 end
