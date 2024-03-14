@@ -14,10 +14,10 @@ This pod binds the bitcoin-core library, the ECDSA curve, secp256k1 into Swift. 
 Bitcoin, Ethereum and many other Cryptocurrency Signature generation and verification.
                        DESC
 
-  s.homepage         = 'https://github.com/Boilertalk/secp256k1.swift'
+  s.homepage         = 'https://github.com/zhangliugang/secp256k1.swift'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Koray Koska' => 'koray@koska.at' }
-  s.source           = { :git => 'https://github.com/Boilertalk/secp256k1.swift.git', :tag => s.version.to_s, :submodules => true }
+  s.source           = { :git => 'https://github.com/zhangliugang/secp256k1.swift.git', :tag => s.version.to_s, :submodules => true }
 
   s.ios.deployment_target = '12.0'
   s.osx.deployment_target = '10.13'
