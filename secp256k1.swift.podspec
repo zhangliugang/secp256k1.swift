@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'secp256k1.swift'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'secp256k1 bindings for swift. Cocoapods, SPM support. Linux support.'
 
 # This description is used to generate tags and improve search results.
@@ -21,13 +21,14 @@ Bitcoin, Ethereum and many other Cryptocurrency Signature generation and verific
 
   s.ios.deployment_target = '13.0'
   s.osx.deployment_target = '10.13'
+  s.swift_version = '5.0'
 
   s.module_name = 'secp256k1'
 
   s.pod_target_xcconfig = {
     'SWIFT_INCLUDE_PATHS' => '${PODS_ROOT}',
     'OTHER_CFLAGS' => '-DENABLE_MODULE_ECDH -DENABLE_MODULE_RECOVERY -DENABLE_MODULE_EXTRAKEYS -DENABLE_MODULE_SCHNORRSIG -pedantic -Wall -Wextra -Wcast-align -Wnested-externs -Wshadow -Wstrict-prototypes -Wno-shorten-64-to-32 -Wno-conditional-uninitialized -Wno-unused-function -Wno-long-long -Wno-overlength-strings -O3',
-    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Sources/secp256k1"'
+    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Sources"'
   }
 
   s.source_files = 'Sources/secp256k1/{src,include,contrib}/*.{h,c}', 'Sources/secp256k1/src/modules/{recovery,ecdh,extrakeys,schnorrsig}/*.{h,c}'
