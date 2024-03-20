@@ -54,7 +54,12 @@ let package = Package(
             publicHeadersPath: "secp256k1/include",
             cSettings: [
                 .headerSearchPath("secp256k1/src"),
-                .unsafeFlags(["-DENABLE_MODULE_ECDH", "-DENABLE_MODULE_EXTRAKEYS", "-DENABLE_MODULE_SCHNORRSIG"])
+                .unsafeFlags([
+                    "-DENABLE_MODULE_ECDH",
+                    "-DENABLE_MODULE_RECOVERY",
+                    "-DENABLE_MODULE_EXTRAKEYS",
+                    "-DENABLE_MODULE_SCHNORRSIG"
+                ])
             ]
         ),
         .target(
